@@ -1,0 +1,176 @@
+/* Define Roboto Font which we have locally. */
+@font-face {
+  font-family: "Roboto";
+  src:url("../fonts/Roboto-Light.ttf");
+}
+html, body {
+  height: 100%;
+}
+h1,h2,h3,h4,h5 {
+  font-family: "Arial Black", sans-serif;
+}
+html, body, p {
+  font-family: "Roboto", sans-serif;
+}
+iframe {
+  border: none;
+}
+form input:focus, form textarea:focus {
+  border-color: #86b3d3;
+}
+form input:focus ~ label, form textarea:focus ~ label{
+  color: #86b3d3;
+}
+iframe {
+  border: none;
+}
+.bg-color-prim {
+  background-color: #233746 !important;
+  /*background-color: #225375 !important;*/
+}
+.bg-color-sec {
+  background-color: #64A1CC !important;
+  /*
+  background-color: #86b3d3 !important;
+  */
+}
+.border-color-prim {
+  border-color: #233746 !important;
+}
+.border-color-sec {
+  border-color: #64A1CC !important;
+}
+.col-border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #233746;
+}
+.color-prim {
+  color: #233746;
+}
+.color-sec {
+  color: #64A1CC;
+}
+.contact-info {
+  font-style: italic;
+  padding-right: 3%;
+}
+.content-padding {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.content-size {
+  height: 90%;
+}
+.customer-logo {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #225375;
+}
+.flex-container {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+.flex-end {
+  justify-content: flex-end !important;
+}
+.header {
+  background-color: #86b3d3;
+}
+.header-size {
+  height: 10%;
+}
+.height-half {
+  height: 50%;
+}
+.loading {
+    background-color: #ffffff;
+    background-image: url("../img/loading.gif");
+    background-size: 25px 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.mB10 {
+  margin-bottom: 10px;
+}
+.mT5 {
+  margin-top: 5px;
+}
+.mT30 {
+  margin-top: 30px;
+}
+.nav-color {
+  background-color: #225375;
+  color: #ffffff;
+}
+.nav-item {
+  width: 20% !important;
+}
+.padding-12 {
+  padding: 12px;
+}
+.parent-height {
+  height: 100%;
+}
+.parent-width {
+  width: 100%
+}
+.table-accordion {
+  cursor: pointer;
+}
+#accountPageCustDropdown {
+  bottom: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+#customerNamesDropdown {
+  max-height: 400px;
+  overflow-y: auto;
+}
+#dash a {
+  text-decoration: none;
+}
+
+/**
+ ** The following section is used for showing/hiding
+ ** pages for the single page app experience.
+ **/
+
+/* selects immediate children of the
+ * app class. */
+.app > * {
+  display: none;
+}
+
+/* selects immediate children of the
+ * app class where the elements are
+ * the last children of their parents. */
+.app > *:last-child {
+  display: block;
+}
+
+/* selects immediate children of the
+ * app class where the current element
+ * is targeted by the #anchor in the url */
+.app > *:target {
+  display: block;
+  animation: fade 300ms linear 1;
+}
+
+/* selects immediate children of the
+ * app class where the elements are
+ * siblings that come after the
+ * element targeted by #anchor in the url */
+.app > *:target ~ * {
+  display: none;
+}
+
+/* 2019-02-12 */
+@media (max-width: 601px) {
+  #orders .w3-border-right {
+    border: none !important;
+  }
+}
